@@ -1,0 +1,26 @@
+{
+  "manifest_version" : 2,
+  "name" : "DogDrip con",
+  "version" : "0.51",
+  "content_scripts" : [
+    {
+      "matches" : [
+      "<all_urls>"
+      ],
+      "js" : ["content.js"]
+    }
+  ],
+  "background" : {
+    "scripts" : ["background.js"]
+  },
+  "permissions" : ["tabs", "contextMenus", "storage", "webNavigation"],
+  "browser_action" : {
+    "default_popup" : "popup/popup.html",
+    "default_title" : "A popup will come here."
+  },
+  "icons" : {
+    "16" : "dogcon_16.png",
+    "48" : "dogcon_48.png",
+    "128" : "dogcon_128.png"
+  }
+}

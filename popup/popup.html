@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="p5/p5.js"></script>
+    <script type="text/javascript" src="p5/addons/p5.dom.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+    <script type="text/javascript" src="../content.js"></script>
+    <link rel="stylesheet" href="style-main.css" type="text/css" media="all">
+
+
+  </head>
+
+  <body class="site">
+    <header class="masthead">
+      <img class="titleImg" src="/dogdrip_con1.png" alt="" height="Auto" height="100px">
+    </header><!-- .masthead -->
+
+    <div id="border">
+      <div class="dropdownSetting">
+
+        <button class="dropbtn">크기설정</button>
+
+        <div class="dropdownSettingContent">
+          <!-- <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a> -->
+          <input id="userinputHeight" placeholder="최대 높이" size="6"></input>
+          <input id="userinputWidth"  placeholder="최대 너비" size="6"></input>
+          <button class="maxButton" type="button" id="maxButton">설정하기</button>
+
+        </div>
+
+        <button class="autoSubmit"  type="button" id="autoSubmit"></button>
+        <button class="urlImgStorage" id="urlImgStorage" type="button" name="button">이미지 저장소</button>
+
+      </div>
+
+
+
+    </div>
+
+    <div class="submitStat">
+      <div class="submitNumber">
+          0
+      </div>
+      개의 개드립 콘이 있습니다.
+    </div>
+
+    <div id="container">
+
+
+
+      <!-- <button type="button" id="fillComment">fill</button> -->
+      <!-- <button type="button" id="reset">reset</button> -->
+      <button  class="runButton" type="button" id="run">작동 중</button>
+
+    </div>
+
+
+    <div id="imgField">
+
+    </div>
+
+  </body>
+</html>
